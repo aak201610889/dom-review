@@ -1,0 +1,51 @@
+body{
+  background: #112b49;
+
+}
+
+.container{
+  border-radius: 10px;
+  padding: 10px 5px;
+
+
+  margin-top: 100px;
+}
+
+
+.container>h1{
+  text-align: center;
+  color: white;
+  background-color: #000;
+  width: 70%;
+  font-size: x-large;
+  margin: auto;
+
+}
+
+.box{
+  text-align: center;
+  background: white;
+ color: #000;
+ border-radius: 10px ;
+ padding: 10px;
+ width: 80%;
+ margin: 10px auto;
+
+}
+.box>h3{
+font-weight: 100;
+letter-spacing: 2px;
+ color: #a31c1c;
+ 
+ 
+
+
+}
+button{
+  background-color: #000;
+color: #fff;
+border: 2px solid rgb(46, 46, 46);
+padding: 6px 8px;
+border-radius: 5px;
+cursor: pointer;
+}
