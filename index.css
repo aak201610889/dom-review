@@ -1,25 +1,72 @@
-body{
+body {
   background: #212231;
   min-width: 100vw;
   min-height: 100vh;
 }
 
-#main-heading{
+#main-heading {
   background-color: rgba(214, 214, 214, 0.123);
 }
 
-.container{
+.container {
   color: white;
   width: 25%;
   text-align: center;
   margin: auto;
   border: white solid 2px;
-
+  display: none;
 }
 
-.list-items{
+.list-items {
   background: white;
   padding: 4px 0px;
   color: black;
   margin: 5px 10px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  display: none;
+}
+
+.cards > div {
+  border: 1px solid white;
+  text-align: center;
+  color: white;
+  height: 200px;
+  width: 130px;
+  padding: 0px 20px;
+  border-radius: 10px;
+}
+
+button {
+  background-color: #ffffff00;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid white;
+  padding: 10px 20px;
+  font-style: italic;
+}
+
+.reveal-container {
+  height: 200px;
+  width: 90%;
+
+  text-align: center;
+  display: flex;
+}
+.reaveal-button {
+  width: 100%;
+}
+.hidden {
+  border: 2px solid white;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hiddenItem {
+  display: none;
 }

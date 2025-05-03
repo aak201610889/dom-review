@@ -101,3 +101,57 @@ console.log("**********");
 let divSibling=document.querySelector('#main-heading')
 console.log(divSibling.nextElementSibling)
 
+
+
+// -----------------------------------------------------------------------
+
+// DOM Manipulation
+
+// Event Listeners
+
+// elemebt.addEventListener("click",function) 
+
+
+const changeBgColor=(item)=>{
+item.style.background="red"
+}
+
+const changeBgColor2=(item)=>{
+item.style.color="blue"
+}
+
+const btn2=document.querySelector(".btn-2")
+btn2.addEventListener("click",()=>alert('pizzaaaaaaaaaaaa')) 
+btn2.addEventListener("mouseover",()=>changeBgColor(btn2)) 
+btn2.addEventListener("mouseover",()=>changeBgColor2(btn2)) 
+
+
+let hidden = true;
+
+const btnHidden = document.querySelector(".reaveal-button");
+const divHidden = document.querySelector(".hidden");
+
+
+  // btnHidden.addEventListener("click", () => {
+  //   console.log("Toggle clicked");
+  //   if (hidden) {
+  //     divHidden.style.display = "block";
+  //   } else {
+  //     divHidden.style.display = "none";
+  //   }
+  //   hidden = !hidden; // Toggle the state
+  // });
+
+
+  //******************  second way***************
+
+  btnHidden.addEventListener("click", () => {
+    console.log("Toggle clicked");
+    if (hidden) {
+   divHidden.classList.remove("hiddenItem")
+    } else {
+      divHidden.classList.add("hiddenItem")
+    }
+    hidden = !hidden; // Toggle the state
+  });
+
