@@ -155,3 +155,18 @@ const divHidden = document.querySelector(".hidden");
     hidden = !hidden; // Toggle the state
   });
 
+
+// -----------------------------------------------------------------------
+
+// DOM Manipulation
+
+//  Event Probagation
+//    1- Event Capturing
+//    2- taget
+//    3- event bubbling
+
+const dd=document.querySelector('.test')
+
+dd.addEventListener('click',(e)=>{
+  console.log(e)
+})
