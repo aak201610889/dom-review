@@ -17,3 +17,28 @@ console.log(container)
 const alldives=document.querySelectorAll('div')
 console.log(alldives)
 
+// --------------------------------
+// you can use slectore for calling classes or ids
+
+const titleSelector=document.querySelector("#main-heading")
+
+console.log(titleSelector)
+titleSelector.style.color='red';
+
+const containreSelector=document.querySelector(".container")
+
+
+containreSelector.style.width='60%';
+
+
+const listItemsSelector=document.querySelectorAll(".list-items")
+
+console.log(listItemsSelector)
+// listItemsSelector.style.fontSize='2rem ' ==>not work because is array it's need for
+
+for (const element of listItemsSelector) {
+  element.style.color='blue'
+  element.style.fontSize='1.3rem'
+}
+
+
