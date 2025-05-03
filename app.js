@@ -41,4 +41,17 @@ for (const element of listItemsSelector) {
   element.style.fontSize='1.3rem'
 }
 
+// ------------------ handling element
+//create
+const ul=document.querySelector('ul');
+const li=document.createElement('li');
+ul.append(li)
+//update
 
+const firstItem=document.querySelector('.list-items')
+console.log(firstItem.innerText)
+console.log(firstItem.innerHTML)
+console.log(firstItem.textContent)
+
+
+firstItem.innerText="Xmen"
