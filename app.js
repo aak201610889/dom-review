@@ -55,22 +55,49 @@ firstItem.innerText = "Xmen";
 
 // delete
 
-li.remove()
-
+// li.remove();
 
 // -------------------------------- modify Attribute & classes
 
 const liSelector = document.querySelector("li");
 liSelector.innerText = "X-men";
 
-          // ---for id -----
+// ---for id -----
 
 liSelector.setAttribute("id", "main-heading");
-console.log(liSelector.getAttribute('id'));
+console.log(liSelector.getAttribute("id"));
 liSelector.removeAttribute("id");
 
-          // ---for class -----
+// ---for class -----
 
-liSelector.classList.add('list-items')
-console.log(liSelector.classList.contains('list-items'));
+liSelector.classList.add("list-items");
+console.log(liSelector.classList.contains("list-items"));
 liSelector.classList.remove("list-items");
+
+// -----------------------------------------------------------------------
+
+// DOM Manipulation
+
+// Traverse the DOM
+// Parent Node Traversal
+// Child Node Traversal
+// Sibling Node Traversal
+
+// -----------------------Parent Node Traversal
+
+let ulParent=document.querySelector('.container')
+console.log(ulParent.parentElement)
+console.log(ulParent.parentNode.parentElement)
+// -----------------------Child Node Traversal
+
+console.log(ulParent.childNodes) 
+// =====>childNodes with indentaions so childeren better
+console.log(ulParent.children)
+
+// Element make wiithout indentaion
+console.log(ulParent.firstElementChild)
+console.log("**********");
+
+let divSibling=document.querySelector('#main-heading')
+console.log(divSibling.nextElementSibling)
+
