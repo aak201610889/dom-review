@@ -4,10 +4,11 @@ const closeBtn = modal.firstElementChild;
 
 btn.addEventListener('click', () => {
   modal.classList.add('show');
-  btn.style.display = 'none';
+  btn.classList.add('hidden');
+
 });
 
 closeBtn.addEventListener('click', () => {
   modal.classList.remove('show');
-  btn.style.display = 'block';
+  btn.classList.remove('hidden');
 });
